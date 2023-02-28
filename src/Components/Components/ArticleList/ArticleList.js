@@ -1,11 +1,10 @@
 export default function ArticleList(props) {
+    console.log(props.articleList);
     return(
         <div className="listWrapper">
-            <ul className="listWrapper__list">
-                {props.articleList.map((article) => {
-                    <li>article.title</li>
-                })}
-            </ul>
+            {props.articleList.map((article) => 
+                    <div className="item">{article.title}</div>
+                )}
         </div>
     ) 
 }

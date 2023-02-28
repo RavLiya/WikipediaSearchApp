@@ -14,7 +14,7 @@ export default function SearchBar(props) {
 
         // console.log(response);
         const json = await response.json();
-        console.log(json);
+        console.log(json.query.search);
         props.setArticleList(json.query.search);
 
     }

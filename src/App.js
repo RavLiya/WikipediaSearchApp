@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ArticleList from "./Components/Components/ArticleList/ArticleList";
 import SearchBar from "./Components/Components/SearchBar/SearchBar";
 
 function App() {
   const [articleList, setArticleList] = useState([]);
+  useEffect(() => {console.log(articleList)}, [articleList]);
 
   return (
     <div className="App">
